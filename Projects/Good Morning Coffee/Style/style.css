@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*body{
+	overflow-y: hidden;
+}*/
+
+.container {
+	display: flex;
+}
+
+.container-img {
+	height: 100vh;
+	width: 60%;
+}
+
+.container-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 42vw;
+	direction: rtl;
+}
+
+.form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+
+}
+
+.form>h1 {
+	text-align: right;
+	font: normal normal 900 43px/63px Heebo;
+	color: #020253;
+}
+
+.form>p {
+	text-align: right;
+	font: normal normal normal 20px/29px Heebo;
+	color: #020253;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-control>label {
+	font: normal normal bold 16px/24px Heebo;
+	letter-spacing: 0px;
+	color: #2C2C2C;
+}
+
+.form-control>input {
+	width: 418px;
+	height: 50px;
+	background: #E5EEFF 0% 0% no-repeat padding-box;
+	border: 0;
+	border-bottom: 4px solid #020253;
+}
+
+.form>button {
+	width: 166px;
+	height: 50px;
+	background: #020253 0% 0% no-repeat padding-box;
+	font: normal normal bold 22px/30px Heebo;
+	letter-spacing: 0.33px;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+	background: #39a8e0;
+	scale: 1.1;
+	transition: 1s;
+	border: none;
+}
+
+#img-m {
+	display: none;
+}
+
+/*tablet view*/
+@media (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.container-img {
+		height: 40vh;
+		width: 100%;
+	}
+
+	.container-form {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 3em;
+	}
+
+	.form {
+		width: 70%;
+		margin-bottom: 1em;
+	}
+}
+
+/*mobile view*/
+@media (max-width:768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.container-img {
+		height: 40vh;
+		width: 100%;
+	}
+
+	.container-form {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 3em;
+	}
+
+	.form {
+		width: 70%;
+		margin-bottom: 1em;
+	}
+
+	.form>h1 {
+		font: normal normal 900 28px/41px Heebo;
+	}
+
+	.form>p {
+		font: normal normal normal 15px/22px Heebo;
+	}
+
+	.form-control>label {
+		font: normal normal bold 10px/14px Heebo;
+	}
+
+	.form-control>input {
+		width: 286px;
+		height: 34px;
+	}
+
+	.form>button {
+		width: 286px;
+		height: 34px;
+		font: normal normal bold 14px/19px Heebo;
+		cursor: pointer;
+	}
+
+	#img-m {
+		display: block;
+	}
+
+	#img-d {
+		display: none;
+	}
+}

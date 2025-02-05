@@ -1,0 +1,304 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Heebo, sans-serif;
+	background-color: #fff;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+.form-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	max-width: 1000px;
+}
+
+.form {
+	text-align: right;
+	direction: rtl;
+	max-width: 400px;
+	width: 100%;
+}
+
+h1 {
+	color: #f5a623;
+	font-size: 2rem;
+}
+
+p {
+	color: #020253;
+	margin: 10px 0 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.formRow {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #020253;
+}
+
+input[type="text"],
+input[type="email"] {
+	flex: 1;
+	border: none;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-bottom: 5px solid #FDBD03;
+	background: #E5EEFF 0% 0% no-repeat padding-box;
+	opacity: 1;
+	font-size: 1rem;
+	width: 300px;
+}
+
+textarea {
+	padding: 10px;
+	border: none;
+	border-bottom: 5px solid #FDBD03;
+	background: #E5EEFF 0% 0% no-repeat padding-box;
+	opacity: 1;
+	font-size: 1rem;
+	height: 100px;
+	margin-bottom: 15px;
+	resize: none;
+	width: 610px;
+}
+
+button {
+	background-color: #FDBD03;
+	color: #020253;
+	font-weight: bold;
+	border: none;
+	padding: 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	width: 150px;
+
+}
+
+button:hover {
+	background-color: #e09420;
+}
+
+.illustration {
+	max-width: 300px;
+}
+
+.social-links {
+	display: flex;
+	margin-top: 30px;
+}
+
+.social-links i {
+	display: inline-block;
+	margin: 0 10px;
+	color: black;
+	background-color: #FDBD03;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	position: relative;
+	right: 550px;
+	top: 40px;
+
+}
+
+.social-links i:hover {
+	background-color: #e09420;
+	cursor: pointer;
+}
+
+.whatsapp {
+	position: fixed;
+	top: 20px;
+	left: 40px;
+	background-color: #FDBD03;
+	color: black;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	text-decoration: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp:hover {
+	background-color: #e09420;
+	cursor: pointer;
+}
+
+#topRightBorder {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 22vw;
+	height: 18px;
+	background-color: #FDBD03;
+}
+
+#bottomLeftBorder {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 55vw;
+	height: 18px;
+	background-color: #FDBD03;
+}
+
+/*tablet view*/
+@media (max-width: 1024px) and (min-width:768px) {
+	.form-container {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 100px;
+	}
+
+	.formRow {
+		flex-direction: column;
+	}
+
+	.illustration {
+		position: absolute;
+		top: 0;
+		width: 20vw;
+		margin-top: 50px;
+
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		width: 100%;
+
+	}
+
+	button {
+		width: 100%;
+		margin-bottom: 80px;
+	}
+
+	.social-links i {
+		margin: 0 5px;
+		left: 20px;
+		top: 20px;
+		margin-bottom: 30px;
+	}
+
+	#topRightBorder {
+		width: 80vw;
+	}
+
+	#bottomLeftBorder {
+		width: 100vw;
+		
+	}
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+
+	.whatsapp {
+		display: none;
+	}
+
+	.form-container {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 100px;
+	}
+
+	h1 {
+		font-size: 30pt;
+		text-align: center;
+		margin-top: 80px;
+	}
+
+	p {
+		text-align: center;
+		font-size: 12pt;
+	}
+
+	.formRow {
+		flex-direction: column;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		width: 100%;
+
+	}
+
+	button {
+		width: 100%;
+		margin-bottom: 80px;
+	}
+
+	.illustration {
+		position: absolute;
+		top: 0;
+		width: 20vw;
+		margin-top: 50px;
+
+	}
+
+	.social-links {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+
+	}
+
+	.social-links i {
+		margin: 0 5px;
+		left: 55px;
+		top: 20px;
+		margin-bottom: 30px;
+	}
+
+	#topRightBorder {
+		width: 80vw;
+	}
+
+	#bottomLeftBorder {
+		width: 100vw;
+		position: relative;
+	}
+}

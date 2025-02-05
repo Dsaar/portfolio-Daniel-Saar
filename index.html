@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daniel Saar Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Style/style.css"> <!-- Link to CSS -->
+	<!--Link for font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--Link for Kumbh Sans Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Heebo:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Satisfy&family=Varela+Round&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="images/Logos/logo-color.svg" alt="Logo" class="logo">
+
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#hero-section">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#gallery">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="hero-section text-center" id="hero-section">
+		<div class="container">
+			<h1 class="hero-title">Forging Worlds <br />
+				Beyond Boundaries</h1>
+			<p class="hero-subtitle">Limitless Creations, One Line of Code at a Time
+			</p>
+
+		</div>
+	</section>
+
+	<!--Logo row-->
+	<section>
+		<div class="row justify-content-center bg-secondary logo-row">
+			<div class="col-1"><img src="images/Logos/html5-brands-solid.svg" class="img-fluid logos" alt="html-logo">
+			</div>
+			<div class="col-1"><img src="images/Logos/css3-alt-brands-solid.svg" class="img-fluid logos" alt="css-logo">
+			</div>
+			<div class="col-1"><img src="images/Logos/bootstrap-brands-solid.svg" class="img-fluid logos"
+					alt="bootstrap-logo"></div>
+			<div class="col-1"><img src="images/Logos/sass-brands-solid.svg" class="img-fluid logos" alt="sass-logo">
+			</div>
+			<div class="col-1"><img src="images/Logos/adobexd-svgrepo-com.svg" class="img-fluid logos" alt="xd-logo">
+			</div>
+		</div>
+	</section>
+
+
+	<!--About-->
+	<section id="about">
+		<div>
+			<h2>About Me</h2>
+			<div class="profilePic">
+				<img src="images/About-Image/Dani-img.jpg" alt="profile" class="pic">
+			</div>
+			<div class="aboutText">
+				<p>Hi, I’m Daniel, a Full Stack Developer passionate about building efficient, user-friendly
+					applications. With
+					expertise in JavaScript, React, Node.js, & Python. I thrive on creating seamless
+					solutions from front-end to back-end.
+					I enjoy solving problems, collaborating with teams, and turning ideas into impactful, scalable
+					projects. Let’s build
+					something amazing together!</p>
+			</div>
+			<div class="contactBtn">
+				<a href="../Portfolio-Project/Files/Blank CV.pdf" target="_blank" class="btn btn bg-warning"
+					download="CV">Download CV <i class="fa-solid fa-angles-right"></i></a>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section class="projects-section" id="gallery">
+		<div class="container">
+			<h2 class="text-center">Project Gallery</h2>
+			<div class="row">
+				<!-- Project Card 1 -->
+				<div class="col-md-4 project-card">
+					<div class="card">
+						<img src="images/Project-Images/Here & Now.png" class="card-img-top" alt="Here & Now-Project">
+						<div class="card-body">
+							<h5 class="card-title">Here & Now</h5>
+							<p class="card-text">The Here & Now project is a landing page created according to the
+								design of an XD sheet. Using HTML and CSS, it is responsive to both mobile phones and
+								desktops.</p>
+							<a href="Transistion-Pages/Transistion Page 1/index.html" class="btn btn-warning">View <i
+									class="fa-solid fa-angles-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!--Project Card 2 -->
+				<div class="col-md-4 project-card">
+					<div class="card">
+						<img src="images/Project-Images/Coffe.png" class="card-img-top" alt="coffee-project">
+						<div class="card-body">
+							<h5 class="card-title">Coffee</h5>
+							<p class="card-text">The Coffee project is a landing page created according to the design of
+								an XD sheet. Using HTML and CSS, it is
+								responsive to both mobile phones and desktops.</p>
+							<a href="Transistion-Pages/Transition Page 2/index.html" class="btn btn-warning">View <i
+									class="fa-solid fa-angles-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- Project Card 3 -->
+				<div class="col-md-4 project-card">
+					<div class="card">
+						<img src="images/Project-Images/Follow my Lead.png" class="card-img-top"
+							alt="follow my lead-Project">
+						<div class="card-body">
+							<h5 class="card-title">Follow Our Lead</h5>
+							<p class="card-text">The Follow Our Lead project is a landing page created according to the
+								design of an XD sheet. Using HTML, CSS, & Bootstrap, it is
+								responsive to both mobile phones and desktops.</p>
+							<a href="Transistion-Pages/Transition Page 3/index.html" class="btn btn-warning">View <i
+									class="fa-solid fa-angles-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- Project Card 4 -->
+				<div class="col-md-4 project-card">
+					<div class="card">
+						<img src="images/Project-Images/Outsidethebox.png" class="card-img-top"
+							alt="Outsidethebox-project">
+						<div class="card-body">
+							<h5 class="card-title">Outside The Box</h5>
+							<p class="card-text">The Outside The Box project is a landing page created according to the
+								design of an XD sheet. Using HTML and CSS, it is
+								responsive to both mobile phones and desktops.</p>
+							<a href="Transistion-Pages/Transition Page 4/index.html" class="btn btn-warning">View <i
+									class="fa-solid fa-angles-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project Card5 -->
+				<div class="col-md-4 project-card">
+					<div class="card">
+						<img src="images/Project-Images/Free Consultation.png" class="card-img-top"
+							alt="free consultation-Project">
+						<div class="card-body">
+							<h5 class="card-title">Free Consultation</h5>
+							<p class="card-text">The Free Consultation project is a landing page created according to
+								the design of an XD sheet. Using HTML and CSS, it is
+								responsive to both mobile phones and desktops.</p>
+							<a href="Transistion-Pages/Transition Page 5/index.html" class="btn btn-warning">View <i
+									class="fa-solid fa-angles-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- Project Card 6 -->
+				<div class="col-md-4 project-card">
+					<div class="card">
+						<img src="images/Project-Images/Trailblazer.png" class="card-img-top" alt="Trailblazer-Project">
+						<div class="card-body">
+							<h5 class="card-title">Lead The Way</h5>
+							<p class="card-text">The Lead The Way project is a landing page created according to the
+								design of an XD sheet. Using HTML and CSS, it is
+								responsive to both mobile phones and desktops.</p>
+							<a href="Transistion-Pages/Transition Page 6/index.html" class="btn btn-warning">View <i
+									class="fa-solid fa-angles-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- Project Card 7 -->
+				<div class="col-md-4 project-card">
+					<div class="card">
+						<img src="images/Project-Images/Discover the World.png" class="card-img-top"
+							alt="discover the world-Project">
+						<div class="card-body">
+							<h5 class="card-title">Discover the World</h5>
+							<p class="card-text">The Discover the World project is a landing page created according to
+								the design of an XD sheet. Using HTML and CSS, it is
+								responsive to both mobile phones and desktops.</p>
+							<a href="Transistion-Pages/Transition Page 7/index.html" class="btn btn-warning">View <i
+									class="fa-solid fa-angles-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Contact Section-->
+	<div class="container contact-container" id="contact">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+
+				<div class="contact-form">
+
+					<h2>Contact Me</h2>
+					<p>If you like what you see, don’t hesitate to reach out! I’m always excited to connect,
+						collaborate, and bring new ideas
+						to life. Let’s work together to create something extraordinary!</p>
+
+
+					<!-- Contact Form -->
+					<form>
+						<div class="form-group">
+							<label for="name">Full Name</label>
+							<input type="text" class="form-control text-right" name="name" required>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control text-right" name="email" required>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input type="tel" class="form-control text-right" name="phone" required>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="request">Request</label>
+							<textarea id="request" name="request" class="form-control text-right" rows="4"></textarea>
+						</div>
+						<br>
+						<button type="submit" class="btn btn-warning btn-block">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<img src="images/Background-Images/Contact.png" alt="contact" id="contactImg">
+	</div>
+
+
+	<!-- Footer Section -->
+	<div class="my-5">
+		<!-- Footer -->
+		<footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Links -->
+				<section class="">
+					<!--Grid row-->
+					<div class="row">
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+							<h6 class="text-uppercase mb-4 font-weight-bold">
+								Daniel Saar-Portfolio
+							</h6>
+							<p>
+								This site was crafted with care using HTML, CSS, and Bootstrap for a seamless
+								experience. The visuals are AI-generated,
+								merging creativity with cutting-edge technology.
+							</p>
+						</div>
+						<!-- Grid column -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+							<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+							<p><i class="fas fa-home mr-3"></i> Raanana, IL</p>
+							<p><i class="fas fa-envelope mr-3"></i> danieljoshuasaar@gmail.com</p>
+							<p><i class="fas fa-phone mr-3"></i> +972-54-300-3617</p>
+
+						</div>
+
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+							<h6 class="text-uppercase mb-4 font-weight-bold">Follow Me</h6>
+
+							<!-- Facebook -->
+							<a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
+								role="button"><i class="fab fa-facebook-f"></i></a>
+
+							<!-- Twitter -->
+							<a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
+								role="button"><i class="fab fa-twitter"></i></a>
+
+							<!-- Google -->
+							<a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+								role="button"><i class="fab fa-google"></i></a>
+
+							<!-- Instagram -->
+							<a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+								role="button"><i class="fab fa-instagram"></i></a>
+
+							<!-- Linkedin -->
+							<a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
+								role="button"><i class="fab fa-linkedin-in"></i></a>
+							<!-- Github -->
+							<a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
+								role="button"><i class="fab fa-github"></i></a>
+						</div>
+					</div>
+					<!--Grid row-->
+				</section>
+				<!-- Section: Links -->
+			</div>
+			<!-- Grid container -->
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+				© 2025 Copyright: Daniel Saar
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- Footer -->
+	</div>
+	<!-- End of .container -->
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

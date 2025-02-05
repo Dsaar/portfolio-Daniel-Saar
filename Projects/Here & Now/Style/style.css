@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+	color: white;
+	direction: rtl;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+}
+
+.container {
+	max-width: 800px;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 4em;
+	font: normal normal normal 120px/120px Satisfy;
+	;
+	margin-bottom: 20px;
+	text-shadow: 0px 0px 36px #00000087;
+	opacity: 1;
+}
+
+h2 {
+	font: normal normal normal 25px/38px Varela Round;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+p {
+	font: normal normal normal 10px/20px Varela Round;
+	color: #F9F9F9;
+	opacity: 1;
+}
+
+
+
+input {
+	width: 80%;
+	display: inline-block;
+
+
+}
+
+div {
+	display: inline-block;
+	padding: 8px;
+
+}
+
+div label {
+	display: block;
+	text-align: right;
+	font: normal normal normal 9px/10px Varela Round;
+	color: #F9F9F9;
+	opacity: 1;
+
+}
+
+div input {
+	width: 220px;
+	height: 30px;
+	background: #F6F6F624 0% 0% no-repeat padding-box;
+	border: 1px solid #FFFFFF;
+	padding: 12px;
+
+}
+
+.submit-btn {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	width: 180px;
+	height: 35px;
+	border: none;
+}
+
+.submit-btn:hover {
+	background: #F6F6F6;
+}
+
+
+@media (max-width:720px) {
+
+	.container{
+		width: 100%;
+		padding: 10px;
+		
+	}
+
+	h1{
+		font-size: 4.5em;
+		margin-top: -150px;
+	}
+
+	h2{
+		font-size: 1.5em;
+		margin-bottom: 40px;
+		
+		
+	}
+
+	p{
+		font-size: 1em;
+		width: 200px;
+		display: inline;
+		
+	}
+
+	.form{
+		display: flex;
+
+	}
+
+	div input{
+		width: 300px;
+	}
+
+	.submit-btn{
+		width: 300px;
+	}
+
+	
+}

@@ -1,0 +1,391 @@
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html {
+			display: block;
+		}
+
+		body {
+			background-color: #E5EEFF;
+			min-height: 100vh;
+			min-width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow-x: hidden;
+
+		}
+
+		.container {
+			width: 80vw;
+			height: 100vh;
+			margin: 0 auto;
+			margin-top: 50px;
+			margin-left: 150px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(5, 270px);
+			gap: 20px;
+
+		}
+
+		h1 {
+			width: 394px;
+			height: 80px;
+			color: #0EE1DA;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			font: normal normal bold 50px/70px Assistant;
+			letter-spacing: 0px;
+			color: #0EE1DA;
+			opacity: 1;
+			margin-top: 100px;
+			margin-left: 120px;
+		}
+
+		p {
+			width: 475px;
+			height: 52px;
+			text-align: center;
+			margin-bottom: 20px;
+			font: normal normal normal 18px/26px Assistant;
+			letter-spacing: 0px;
+			color: #F9F9F9;
+			opacity: 1;
+			margin-left: 80px;
+		}
+
+		#box1 {
+			grid-column: 3/5;
+			background-color: #020253;
+			height: 562px;
+			display: block;
+		}
+
+		#lake,
+		#buddah {
+			grid-row: 1/2;
+		}
+
+		#view {
+			grid-row: 3/4;
+		}
+
+		#fishing {
+			grid-column: 2/3;
+		}
+
+		#india,
+		#subway,
+		#sunrise {
+			grid-column: 4/5;
+		}
+
+		#monkey,
+		#field,
+		#temple {
+			grid-column: 3/4;
+		}
+
+		#contact {
+			background-color: #8E097C;
+			grid-row: 4/7;
+			grid-column: 1/3;
+			padding: 20px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 1.8em;
+			margin-bottom: 10px;
+			margin-top: 40px;
+			margin-left: 130px;
+			margin-bottom: 30px;
+			color: #FFFFFF;
+			text-align: center;
+			width: 340px;
+			height: 46px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			margin-top: 80px;
+			width: 613px;
+		}
+
+		label {
+			font-size: 0.9rem;
+			text-align: right;
+			margin-right: 50px;
+			color: #0EE1DA;
+		}
+
+		input {
+			height: 60px;
+		}
+
+		input,
+		textarea {
+			padding: 10px;
+			border: 2px solid #a80992;
+			font-size: 1rem;
+			background-color: #e3f4ff;
+			width: 500px;
+			border-bottom: 3px solid #0EE1DA;
+		}
+
+		input,
+		textarea,
+		button {
+			margin-left: 65px;
+		}
+
+		textarea {
+			resize: none;
+		}
+
+		button {
+			background-color: #0EE1DA;
+			color: #011560;
+			border: none;
+			padding: 10px;
+			font-size: 1rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			width: 500px;
+			height: 60px;
+		}
+
+		button:hover {
+			background-color: #8c077b;
+		}
+
+		/*tablet view*/
+		@media (max-width: 1024px) and (min-width:768px) {
+			body {
+				display: block;
+
+			}
+
+			.container {
+				grid-template-columns: repeat(1fr);
+				grid-template-rows: auto;
+				gap: 15px;
+				margin: 0 auto;
+				height: 90vh;
+				width: 100vw;
+
+			}
+
+			#box1 {
+				grid-column: 1/3;
+				text-align: center;
+				padding: 20px;
+			}
+
+			#lake,
+			#buddah {
+
+				grid-row: 2/3;
+			}
+
+			#beach,
+			#bull {
+				grid-row: 3/4;
+			}
+
+			#sunset,
+			#forrest {
+				grid-row: 4/5;
+			}
+
+			#view {
+				grid-row: 5/6;
+			}
+
+			#india,
+			#subway,
+			#sunrise {
+				grid-column: 2/3;
+			}
+
+			#monkey,
+			#field,
+			#temple {
+				grid-column: 1/2;
+			}
+
+
+
+			.item img {
+				width: 50vw;
+				height: auto;
+			}
+
+			#contact {
+				grid-column: 1/3;
+				grid-row: 6/8;
+				padding: 20px;
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 40pt;
+				margin-bottom: 10px;
+				margin-right: 200px;
+				margin-left: auto;
+				
+
+			}
+
+			p {
+				margin-left: auto;
+				margin-right: 160px;
+				font-size: 10pt;
+				text-align: justify;
+				
+			}
+
+			h2 {
+				font-size: 20pt;
+				margin-bottom: 20px;
+				margin-left: auto;
+				margin-right: 220px;
+			}
+
+			form {
+				width: 90%;
+				margin: 0 auto;
+				margin-right: 150px;
+			}
+
+			label {
+				font-size: 1rem;
+				margin-right: 80px;
+			}
+
+			input,
+			textarea,
+			button {
+				width: 60vw;
+				height: auto;
+				margin-left: auto;
+				margin-right: 70px;
+			}
+		}
+
+		/* Mobile View*/
+		@media (max-width: 768px) {
+			body {
+				display: block;
+
+			}
+
+			.container {
+				grid-template-columns: repeat(1fr);
+				grid-template-rows: auto;
+				gap: 15px;
+				margin: 0 auto;
+				height: 90vh;
+				width: 100vw;
+
+			}
+
+			#box1 {
+				grid-column: 1/3;
+				text-align: center;
+				padding: 20px;
+			}
+
+			#lake,
+			#buddah {
+
+				grid-row: 2/3;
+			}
+
+			#beach,
+			#bull {
+				grid-row: 3/4;
+			}
+
+			#sunset,
+			#forrest {
+				grid-row: 4/5;
+			}
+
+			#view {
+				grid-row: 5/6;
+			}
+
+			#india,
+			#subway,
+			#sunrise {
+				grid-column: 2/3;
+			}
+
+			#monkey,
+			#field,
+			#temple {
+				grid-column: 1/2;
+			}
+
+
+
+			.item img {
+				width: 50vw;
+				height: auto;
+			}
+
+			#contact {
+				grid-column: 1/3;
+				grid-row: 6/8;
+				padding: 20px;
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 30px;
+				margin-bottom: 10px;
+				margin-left: auto;
+
+			}
+
+			p {
+				margin-left: auto;
+				font-size: 10px;
+				text-align: justify;
+			}
+
+			h2 {
+				font-size: 26px;
+				margin-bottom: 20px;
+				margin-left: auto;
+				margin-right: 15px;
+			}
+
+			form {
+				width: 90%;
+				margin: 0 auto;
+				margin-right: 100px;
+			}
+
+			label {
+				font-size: 1rem;
+				margin-right: 0;
+			}
+
+			input,
+			textarea,
+			button {
+				width: 70vw;
+				height: auto;
+				margin-left: auto;
+			}
+		}
