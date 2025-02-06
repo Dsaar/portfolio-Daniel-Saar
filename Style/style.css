@@ -497,22 +497,61 @@ form .btn {
 	}
 }
 
-@media (min-width: 300px) and (max-width: 768px){
+/* Fix for all screen widths between 400px and 768px */
+@media (min-width: 400px) and (max-width: 768px) {
 
 	.container,
 	.contact-container {
 		width: 100vw;
+		/* Ensure containers fit within the viewport */
 		margin: 0;
+		/* Remove default margins */
 		padding: 0;
+		/* Remove paddings causing extra space */
+		overflow-x: hidden;
+		/* Prevent horizontal scrolling for Safari */
 	}
 
 	.aboutText {
 		padding-left: 20px;
+		/* Adjust padding for better spacing */
 		padding-right: 20px;
 	}
 
 	.contact-form {
-		width: 100%;
+		width: 90%;
+		/* Reduce width to fit properly within the viewport */
 		margin: 0 auto;
+		/* Center align the form */
+		overflow-x: hidden;
+		/* Prevent overflow inside the form */
 	}
+
+	.project-card .card {
+		margin: 10px;
+		/* Ensure proper spacing between cards */
+		overflow-x: hidden;
+		/* Prevent individual cards from causing overflow */
+	}
+}
+
+/* Specific fix for Safari and Firefox */
+html,
+body {
+	margin: 0;
+	/* Reset margins that might cause overflow */
+	padding: 0;
+	/* Reset paddings for consistency */
+	width: 100%;
+	/* Ensure body and html take up the full viewport width */
+	overflow-x: hidden;
+	/* Prevent horizontal scrolling */
+}
+
+/* Ensure child elements do not cause overflow */
+* {
+	max-width: 100%;
+	/* Prevent elements from exceeding the viewport width */
+	box-sizing: border-box;
+	/* Ensure padding and borders are included in width */
 }
