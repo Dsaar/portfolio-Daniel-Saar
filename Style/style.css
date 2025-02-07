@@ -547,11 +547,3 @@ body {
 	overflow-x: hidden;
 	/* Prevent horizontal scrolling */
 }
-
-/* Ensure child elements do not cause overflow */
-* {
-	max-width: 100%;
-	/* Prevent elements from exceeding the viewport width */
-	box-sizing: border-box;
-	/* Ensure padding and borders are included in width */
-}
