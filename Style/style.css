@@ -547,3 +547,15 @@ body {
 	overflow-x: hidden;
 	/* Prevent horizontal scrolling */
 }
+
+/*Contact-Section*/
+.contact-container {
+	background-color: #860d29;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: auto;
+
+
+}
