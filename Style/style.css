@@ -504,19 +504,6 @@ form .btn {
 	}
 }
 
-/* Specific fix for Safari and Firefox */
-html,
-body {
-	margin: 0;
-	/* Reset margins that might cause overflow */
-	padding: 0;
-	/* Reset paddings for consistency */
-	width: 100%;
-	/* Ensure body and html take up the full viewport width */
-	overflow-x: hidden;
-	/* Prevent horizontal scrolling */
-}
-
 /*Contact-Section*/
 .contact-container {
 	background-color: #860d29;
