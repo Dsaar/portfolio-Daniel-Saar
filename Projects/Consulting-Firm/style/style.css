@@ -130,6 +130,7 @@ body {
     margin-top: 60px;
     /* Lower the grid to create space for the heading and subtitle */
     padding: 0 15px;
+    margin-top: 700px;
   }
   .grid-item {
     width: 100%;
@@ -151,9 +152,10 @@ body {
   .hero p {
     font-size: 1rem;
     /* Ensure readability */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     /* Extra space below the subtitle */
     padding: 30px;
+    margin-top: -10px;
   }
   .grid-item:nth-child(2),
   .grid-item:nth-child(4) {
