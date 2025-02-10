@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: brawler, sans-serif;
+  background-color: #00c0c7;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../images/office-background.webp");
+  /* Replace with actual path */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.182);
+  height: 65vh;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: -50px auto 0;
+  /* Adjusted to overlap */
+  max-width: 1200px;
+  padding: 0 20px;
+  height: 45vh;
+}
+
+.grid-item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  background-color: #00c0c7;
+  color: white;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  font-size: 2rem;
+}
+
+.grid-item h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.grid-item a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.grid-item a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 40px;
+  background: black;
+  margin: 5px auto 0;
+}
+
+/* Staggered layout adjustments */
+.grid-item:nth-child(1),
+.grid-item:nth-child(3) {
+  margin-top: -90px;
+}
+
+.grid-item:nth-child(2),
+.grid-item:nth-child(4) {
+  margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* Add consistent spacing between the boxes */
+    margin-top: 60px;
+    /* Lower the grid to create space for the heading and subtitle */
+    padding: 0 15px;
+  }
+  .grid-item {
+    width: 100%;
+    /* Ensure responsive sizing */
+    max-width: 320px;
+    /* Cap the maximum width for consistency */
+    margin-bottom: 40px;
+  }
+  .icon {
+    margin-bottom: 10px;
+    /* Adjust spacing below the icon */
+  }
+  .hero h1 {
+    font-size: 2rem;
+    /* Adjust for readability on smaller screens */
+    margin-bottom: 5px;
+    /* Space between the title and subtitle */
+  }
+  .hero p {
+    font-size: 1rem;
+    /* Ensure readability */
+    margin-bottom: 20px;
+    /* Extra space below the subtitle */
+    padding: 30px;
+  }
+  .grid-item:nth-child(2),
+  .grid-item:nth-child(4) {
+    margin-bottom: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
