@@ -222,24 +222,71 @@ button {
 
 /*tablet view*/
 @media (max-width: 1024px) and (min-width:768px) {
-	.cube {
-		height: auto;
-		padding-bottom: 20px;
+	body {
+		overflow-x: hidden
 	}
 
-	.cube p {
-		margin-left: 20px;
-		margin-right: 20px;
+	.whatsapp {
+		display: none;
+	}
+
+	header img {
+		margin-right: 10px;
+	}
+
+	.hero-section {
+		display: block;
+	}
+
+	.hero-content {
+		margin-left: 10px;
+		margin-right: 10px;
+
+	}
+
+	.cube-section {
+		flex-direction: column;
 	}
 
 	.map-container {
-		height: 60vh;
+		width: 100%;
 	}
 
 	.map-container iframe {
-		width: 40vw;
-		height: 50vh;
+		width: 80vw;
+		height: 40vh;
+		margin: 0 auto;
 
+	}
+
+	.contact-section {
+		flex-direction: column;
+	}
+
+	.form-container {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	section h2 {
+		margin:0 auto;
+
+	}
+
+	section p {
+		margin: 0 auto;
+	}
+
+	form {
+		margin-right: 20px;
+		margin: 0 auto;
+	}
+
+	
+
+	button {
+		margin:0 auto;
+	
 	}
 
 	.social-links {
@@ -250,7 +297,6 @@ button {
 		position: relative;
 		right: inherit;
 	}
-
 
 }
 
