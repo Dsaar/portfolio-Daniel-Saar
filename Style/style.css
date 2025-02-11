@@ -248,6 +248,16 @@ h1 {
 
 }
 
+.project-card .logos {
+	display: flex;
+	justify-content: center;
+	width: 20px;
+	/* Adjust as needed */
+	height: auto;
+	/* Maintains aspect ratio */
+	padding-bottom: 30px;
+}
+
 .project-card .card .card-body h5 {
 	font-weight: bold;
 }
@@ -319,7 +329,7 @@ form .btn {
 	.hero-title {
 		font-size: 4.5rem;
 		text-align: center;
-		
+
 	}
 
 	.hero-subtitle {
@@ -333,7 +343,7 @@ form .btn {
 		font-size: 18px;
 	}
 
-	.project-card{
+	.project-card {
 		width: auto;
 	}
 
@@ -352,10 +362,10 @@ form .btn {
 		width: 60vw;
 		margin-right: 250px;
 		padding: 40px;
-		
+
 	}
 
-	.contact-form label{
+	.contact-form label {
 		align-items: left;
 	}
 
@@ -418,7 +428,7 @@ form .btn {
 		font-size: 1rem;
 		text-align: left;
 		color: #e77676;
-		
+
 
 	}
 
