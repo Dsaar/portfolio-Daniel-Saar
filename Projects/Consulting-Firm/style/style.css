@@ -14,7 +14,6 @@ body {
 .hero {
   position: relative;
   background-image: url("../images/office-background.webp");
-  /* Replace with actual path */
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -43,7 +42,6 @@ body {
   align-items: flex-start;
   gap: 30px;
   margin: -50px auto 0;
-  /* Adjusted to overlap */
   max-width: 1200px;
   padding: 0 20px;
   height: 45vh;
@@ -126,34 +124,25 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    /* Add consistent spacing between the boxes */
     margin-top: 60px;
-    /* Lower the grid to create space for the heading and subtitle */
     padding: 0 15px;
     margin-top: 700px;
   }
   .grid-item {
     width: 100%;
-    /* Ensure responsive sizing */
     max-width: 320px;
-    /* Cap the maximum width for consistency */
     margin-bottom: 40px;
   }
   .icon {
     margin-bottom: 10px;
-    /* Adjust spacing below the icon */
   }
   .hero h1 {
     font-size: 2rem;
-    /* Adjust for readability on smaller screens */
     margin-bottom: 5px;
-    /* Space between the title and subtitle */
   }
   .hero p {
     font-size: 1rem;
-    /* Ensure readability */
     margin-bottom: 30px;
-    /* Extra space below the subtitle */
     padding: 30px;
     margin-top: -10px;
   }
@@ -161,4 +150,4 @@ body {
   .grid-item:nth-child(4) {
     margin-bottom: 100px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
