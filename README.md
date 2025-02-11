@@ -12,5 +12,5 @@ Bootstrap
 
 Adobe XD 
 
-##Usage
+## Usage
 Site is compatible with Safari, Firefox, Edge, and Chrome browsers. On both desktop tablet and mobile.
