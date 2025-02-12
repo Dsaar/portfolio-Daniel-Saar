@@ -138,6 +138,7 @@ body {
     height: 100vh;
   }
   .hero-content {
+    padding-top: 400px;
     height: 100%;
   }
   a {
