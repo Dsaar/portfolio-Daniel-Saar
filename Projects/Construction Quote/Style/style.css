@@ -137,7 +137,7 @@ body {
     flex-direction: column;
   }
   #hero {
-    height: auto;
+    height: 100%;
   }
   a {
     height: auto;
