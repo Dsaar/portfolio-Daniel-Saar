@@ -135,6 +135,7 @@ body {
   .container {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
   #hero {
     height: 100%;
