@@ -1,0 +1,185 @@
+// Import Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+$primary-color: #ff9800;
+$text-color: #fff;
+$bg-overlay: rgba(0, 0, 0, 0.5); // Dark overlay effect
+$form-bg: #2eb0ed; // Light Blue Form Background
+$btn-color: #ff9800;
+$btn-hover: #e68900;
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#hero {
+	position: relative;
+	background: url('../Images/ConstructionImg.jpg') no-repeat center center/cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// dark overlay
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $bg-overlay;
+		z-index: 1;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
+		max-width: 1200px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.hero-content {
+		color: $text-color;
+		max-width: 50%;
+
+		h1 {
+			font-size: 2.8rem;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 1.2rem;
+			font-weight: 300;
+		}
+
+		.cta-btn {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 12px 24px;
+			background: $btn-color;
+			color: $text-color;
+			font-size: 1rem;
+			text-decoration: none;
+			transition: 0.3s;
+
+			&:hover {
+				background: $btn-hover;
+			}
+		}
+	}
+
+	.hero-form {
+		background: $form-bg;
+		padding: 30px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		max-width: 400px;
+
+		h2 {
+			font-size: 1.8rem;
+			margin-bottom: 15px;
+			color: #ffffff;
+		}
+
+		.form-group {
+			margin-bottom: 15px;
+
+			input,
+			textarea {
+				width: 90%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				font-size: 1rem;
+				resize: none;
+			}
+		}
+
+		.submit-btn {
+			width: 100%;
+			padding: 12px;
+			background: $btn-color;
+			color: $text-color;
+			font-size: 1rem;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: 0.3s;
+
+			&:hover {
+				background: $btn-hover;
+			}
+		}
+	}
+}
+
+/* Responsive Design */
+
+// Tablets and Mobile (up to 1024px)
+@media (max-width: 1024px) {
+	body {
+		height: auto;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#hero {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.hero-content,
+	.hero-form {
+		max-width: 100%;
+		padding: 20px;
+	}
+
+	a {
+		height: auto;
+		width: 40vw;
+		margin: 0 auto;
+	}
+
+	.hero-content {
+		order: 1;
+	}
+
+	.hero-form {
+		order: 2;
+		background: rgba(255, 255, 255, 0.9);
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#hero {
+		height: auto;
+	}
+
+	a {
+		height: auto;
+		width: 30vw;
+		margin: 0 auto;
+	}
+
+	.hero-form {
+		margin: 0 auto;
+	}
+}
