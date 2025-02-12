@@ -130,6 +130,7 @@ body {
 	.container {
 		display: flex;
 		flex-direction: column;
+		height: auto;
 	}
 
 	#hero {
@@ -138,6 +139,7 @@ body {
 		align-items: center;
 		width: 100%;
 		padding: 20px;
+		height: auto;
 	}
 
 	.hero-content,
