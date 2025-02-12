@@ -137,7 +137,7 @@ body {
     flex-direction: column;
     height: 100vh;
   }
-  #hero {
+  .hero-content {
     height: 100%;
   }
   a {
