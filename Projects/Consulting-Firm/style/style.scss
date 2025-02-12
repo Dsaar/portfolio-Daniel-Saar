@@ -118,6 +118,143 @@ body {
 	margin-top: -40px;
 }
 
+.contact {
+	position: relative;
+	text-align: center;
+	padding: 50px 70px;
+	background: url('../images/office-background.webp') no-repeat center center/cover;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin: 50px auto;
+	max-width: 600px;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.contact::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	z-index: -1;
+}
+
+.contact h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #fff;
+	position: relative;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.contact form label {
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.contact form textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.contact form button {
+	padding: 12px 20px;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+}
+
+.contact form button:hover {
+	background: #0056b3;
+}
+
+
+/*tablet view*/
+@media (max-width: 1024px) and (min-width:768px) {
+	.grid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		padding: 0 15px;
+		margin-top: 500px;
+	}
+
+
+	.grid-item {
+		width: 100%;
+		max-width: 320px;
+		margin-bottom: 40px;
+	}
+
+	.icon {
+		margin-bottom: 10px;
+	}
+
+	.hero{
+		height: auto;
+	}
+
+	.hero h1 {
+		font-size: 2rem;
+		margin-bottom: 5px;
+
+	}
+
+	.hero p {
+		font-size: 1rem;
+		margin-bottom: 30px;
+	
+	}
+
+	.grid-item:nth-child(2),
+	.grid-item:nth-child(4) {
+		margin-bottom: 100px;
+	}
+
+	.contact {
+		padding: 50px 75px;
+		margin-top: 500px;
+	}
+
+	form {
+
+		input,
+		textarea {
+			font-size: 0.9rem;
+		}
+	}
+
+}
+
+
+/*mobile view*/
 @media (max-width: 768px) {
 	.grid {
 		display: flex;
@@ -156,6 +293,19 @@ body {
 	.grid-item:nth-child(2),
 	.grid-item:nth-child(4) {
 		margin-bottom: 100px;
+	}
+
+	.contact {
+		padding: 30px 25px;
+		margin-top: 500px;
+	}
+
+	form {
+
+		input,
+		textarea {
+			font-size: 0.9rem;
+		}
 	}
 
 }
