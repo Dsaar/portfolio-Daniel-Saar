@@ -164,14 +164,23 @@ body {
 }
 
 @media (max-width: 400px) {
+
+	body {
+		background-color: cadetblue;
+	}
+
 	.container {
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
 	}
 
+	#hero {
+		margin-top: auto;
+		height: 100vh;
+	}
+
 	.hero-content {
-		padding-top: 400px;
 		height: 100%;
 	}
 
