@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #1E1E2F;
+	overflow-x: hidden;
+	font-family: Kumbh Sans, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.navbar {
+	background-color: #1E1E2F;
+	position: sticky;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.navbar-brand .logo {
+	height: 60px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+
+.navbar-nav .nav-link {
+	font-size: 1.1rem;
+	margin-right: 20px;
+	color: #f0f0f0;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #FFA500;
+	/* Hover color for links */
+}
+
+
+/* Hero Section */
+.hero-section {
+	padding: 100px 0;
+	background-image: url('/images/Background-Images/Landing-Page.png');
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.500);
+	/* Add the background graphic here */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #bc0202;
+	/* Burgundy color for the text */
+	height: 78vh;
+	display: flex;
+}
+
+.hero-title {
+	font-size: 6rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.hero-subtitle {
+	margin: 20px 0;
+	font-size: 1.4rem;
+	text-align: center;
+	color: #e77676;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+
+.btn {
+	align-items: center;
+	border-radius: 80px;
+	margin: 15px;
+
+}
+
+.btn-warning {
+	background-color: #FFA500;
+	border: none;
+
+
+}
+
+.gitLogo{
+	height: 5px;
+	width: 5px;
+}
+
+.logo-row {
+	border: 1px solid whitesmoke;
+	height: 10vh;
+}
+
+.logos {
+	height: 7vh;
+	width: auto;
+	color: #eaf4ee;
+	margin-top: 10px;
+
+}
+
+.logos:hover {
+	transform: scale(1.2);
+	transition: 1.5s;
+}
+
+#project {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: 600px;
+}
+
+@keyframes title-appear {
+	from {
+		opacity: 0;
+		transform: translateY(-300);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes sub-title-appear {
+	from {
+		opacity: 0;
+		transform: translateY(-300);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+h1 {
+	animation: title-appear 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 0.7s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: both;
+	transform: translateX(-150px);
+}
+
+.hero-subtitle {
+	animation: sub-title-appear 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: both;
+	transform: translateX(-150px);
+}
+
+#hero-section a{
+	animation: sub-title-appear 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: both;
+	transform: translateX(-150px);
+}
+
+
+
+@media (max-width:768px) {
+
+	.logo-row {
+		height: 5vh;
+	}
+
+	.img-fluid {
+		max-width: 5vw;
+		max-height: 3vh;
+	}
+
+}
+
+
+
+
+
+/* Fixing text alignment issue for mobile view */
+
+@media (max-width: 768px) {
+
+
+	.navbar {
+		width: 100%;
+
+	}
+
+	#hero-section{
+		height: auto;
+	}
+
+	.container {
+		display: flex;
+		/* Use flexbox for alignment */
+		flex-direction: row;
+		/* Place text in a single row */
+		align-items: center;
+		/* Center-align the text vertically */
+		justify-content: center;
+		/* Center-align the text horizontally */
+		text-align: center;
+		/* Center-align the text content */
+		margin: 0 auto;
+		/* Ensure proper centering on the page */
+		padding: 10px;
+		/* Add some padding for better spacing */
+		flex-wrap: wrap;
+		/* Ensure text wraps properly on smaller screens */
+		
+	}
+
+	/* Example of typography adjustments */
+	.container p {
+		font-size: 16px;
+		/* Adjust font size as needed */
+		line-height: 1.5;
+		/* Improve readability */
+		margin: 0 5px;
+		/* Add spacing between words */
+	}
+
+	.hero-title {
+		font-size: 4rem;
+		font-weight: bold;
+		text-align: center;
+		padding-top: -100px;
+		top: -20px;
+	}
+
+	.hero-subtitle {
+		font-size: 1rem;
+		text-align: center;
+		color: #e77676;
+
+	}
+
+	.btn {
+		height: 40px;
+		width: 180px;
+	}
+
+	#project {
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+		width: auto;
+		height: 200px;
+	}
+}
