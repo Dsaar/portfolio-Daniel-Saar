@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Frogger-Game</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<canvas id="canvas1"></canvas>
+		<canvas id="canvas2"></canvas>
+		<canvas id="canvas3"></canvas>
+		<canvas id="canvas4"></canvas>
+		<canvas id="canvas5"></canvas>
+	</div>
+	<div id="gameModal" class="modal">
+		<div class="modal-content">
+			<h1>Frogger</h1>
+			<p><strong>Desktop Controls:</strong><br>
+				Use the arrow keys <br> ⬆️ ⬇️ ⬅️ ➡️
+			</p>
+			<p><strong>Mobile Controls:</strong><br>
+				Swipe in the direction you want the frog to move.
+			</p>
+			<button id="startButton">Start Game</button>
+		</div>
+		</div>
+	<script src="./src/setup.js"></script>
+	<script src="./src/frogger.js"></script>
+	<script src="./src/particles.js"></script>
+	<script src="./src/obstacles.js"></script>
+	<script src="./src/utilities.js"></script>
+</body>
+</html>

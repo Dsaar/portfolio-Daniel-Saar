@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pac-Man</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<div>
+		<h1>Pac-Man</h1>
+		<canvas id="gameCanvas"></canvas>
+		<button id="restartButton">Restart</button>
+	</div>
+	<div id="startModal" class="modal">
+		<div class="modal-content">
+			<h2>Pac-Man</h2>
+			<p><strong>Desktop:</strong> Use Arrow keys or WASD to move.</p>
+			<p><strong>Mobile:</strong> Swipe anywhere to move Pac-Man.</p>
+			<button id="startButton">Start Game</button>
+		</div>
+	</div>
+	<script src="src/game.js" type="module"></script>
+</body>
+
+</html>

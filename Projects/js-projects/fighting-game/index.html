@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<title>Fighting Game</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+		integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="src/utilities.js" defer></script>
+	<script src="src/classes.js" defer></script>
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<div id="startModal" class="modal">
+		<div class="modal-content">
+			<h1>Samurai Fight</h1>
+			<p>Use W/A/D or Arrow Keys to move<br>Press Space to attack</p>
+			<button id="startBtn">Start Game</button>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="game-wrapper">
+			<div class="health-bars">
+				<div class="playerBar">
+					<div class="player-bar"></div>
+					<div class="playerReduce" id="player-health"></div>
+				</div>
+
+				<div class="timer">10</div>
+
+				<div class="enemyBar">
+					<div class="enemy-bar"></div>
+					<div class="enemyReduce" id="enemy-health"></div>
+				</div>
+			</div>
+
+			<canvas class="canvas"></canvas>
+		</div>
+
+		<div class="gameScoreText">
+			<p id="gameResult">Tie</p>
+			<button id="restartBtn">Restart</button>
+			</div>	</div>
+
+	<!-- ✅ Mobile touch controls -->
+	<div class="touch-controls">
+		<button id="btnLeft">◀️</button>
+		<button id="btnRight">▶️</button>
+		<button id="btnJump">⬆️</button>
+		<button id="btnAttack">⚔️</button>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+</head>
+
+<body>
+	<div>
+		<div class="scores">
+			<h2 id="score">000</h2>
+			<h2 id="highScore">000</h2>
+		</div>
+		<div class="game-border-1">
+			<div class="game-border-2">
+				<div class="game-border-3">
+					<div id="game-board"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img id="logo" src="images/snake-game-ai-gen.png" alt="snake-logo">
+	<h2 id="instruction-text">Press spacebar to start the game</h2>
+	<button id="start-button" onclick="startGame()">Start Game</button>
+
+
+<div id="mobile-controls">
+	<button class="control-btn" id="btn-up">⬆️</button>
+	<div>
+		<button class="control-btn" id="btn-left">⬅️</button>
+		<button class="control-btn" id="btn-down">⬇️</button>
+		<button class="control-btn" id="btn-right">➡️</button>
+	</div>
+</div>
+
+
+</body>
+
+</html>
