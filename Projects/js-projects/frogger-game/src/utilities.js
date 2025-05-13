@@ -22,8 +22,6 @@ function animate() {
 	requestAnimationFrame(animate);
 }
 
-//animate();
-
 // Keyboard controls
 window.addEventListener('keydown', function (e) {
 	keys = [];
@@ -77,12 +75,18 @@ function resetGame() {
 let touchStartX = 0;
 let touchStartY = 0;
 
+const wrapper = document.querySelector('.wrapper');
+
 window.addEventListener('touchstart', function (e) {
+	if (!wrapper.contains(e.target)) return;
+	e.preventDefault();
 	touchStartX = e.changedTouches[0].clientX;
 	touchStartY = e.changedTouches[0].clientY;
-}, false);
+}, { passive: false });
 
 window.addEventListener('touchend', function (e) {
+	if (!wrapper.contains(e.target)) return;
+	e.preventDefault();
 	if (!gameStarted) return;
 
 	const dx = e.changedTouches[0].clientX - touchStartX;
@@ -103,7 +107,7 @@ window.addEventListener('touchend', function (e) {
 		frogger.moving = false;
 		frogger.frameX = 0;
 	}, 100);
-});
+}, { passive: false });
 
 const modal = document.getElementById('gameModal');
 const startButton = document.getElementById('startButton');
