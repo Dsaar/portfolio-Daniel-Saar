@@ -92,3 +92,19 @@
  	background-color: #00ced1;
  	box-shadow: 0 0 15px #00ced1;
  }
+
+ /* Tablet (portrait and landscape) */
+@media (min-width: 600px) and (max-width: 1024px) {
+	h1{
+		margin-top: 100px;
+	}
+	.board {
+		grid-template-columns: repeat(3, 25vw);
+		grid-template-rows: repeat(3, 25vw);
+	}
+	.cell {
+		width: 25vw;
+		height: 25vw;
+		font-size: 8vw;
+	}
+}
