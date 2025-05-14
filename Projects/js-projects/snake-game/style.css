@@ -189,6 +189,11 @@ body,
 }
 
 @media (max-width: 768px) {
+
+	.game-container {
+			margin-top: -75px;
+		}
+
 	#start-button {
 		display: block;
 		position: absolute;
