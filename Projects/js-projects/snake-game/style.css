@@ -17,6 +17,14 @@ body,
 	background-color: #414141;
 }
 
+.game-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -40px;
+	/* Adjust this value to move higher or lower */
+}
+
 #game-board {
 	border-radius: 100px;
 	display: grid;
@@ -122,13 +130,19 @@ body,
 	color: white;
 }
 
+@media (min-width: 1025px) {
+	.game-container {
+		margin-top: -60px;
+	}
+}
+
 /* -------- MOBILE & TABLET STYLES -------- */
 @media (max-width: 1024px) {
 
 	#start-button {
 		display: block;
 		position: absolute;
-		top: 80%;
+		top: 70%;
 		font-size: 20px;
 		padding: 8px 16px;
 		border-radius: 8px;
@@ -144,7 +158,7 @@ body,
 	#mobile-controls {
 		display: flex;
 		position: absolute;
-		top: 85%;
+		top: 75%;
 		left: 50%;
 		transform: translateX(-50%);
 		flex-direction: column;
