@@ -1,14 +1,12 @@
 'use strict';
 
-// Define the HTML elements
 const board = document.getElementById('game-board');
 const instructionText = document.getElementById('instruction-text');
 const logo = document.getElementById('logo');
 const score = document.getElementById('score');
 const highScoreText = document.getElementById('highScore');
-const startButton = document.getElementById('start-button'); // Added for easier access
+const startButton = document.getElementById('start-button');
 
-// Game variables
 const gridSize = 20;
 let snake = [{ x: 10, y: 10 }];
 let food = generateFood();
@@ -18,7 +16,6 @@ let gameInterval;
 let gameSpeedDelay = 200;
 let gameStarted = false;
 
-// Draw game map, snake, food
 function draw() {
 	board.innerHTML = '';
 	drawSnake();
@@ -87,7 +84,7 @@ function startGame() {
 	gameStarted = true;
 	instructionText.style.display = 'none';
 	logo.style.display = 'none';
-	startButton.style.display = 'none'; // Hide start button
+	startButton.style.display = 'none';
 	gameInterval = setInterval(() => {
 		move();
 		checkCollision();
@@ -114,26 +111,17 @@ function handleKeyPress(event) {
 document.addEventListener('keydown', handleKeyPress);
 
 function increaseSpeed() {
-	if (gameSpeedDelay > 150) {
-		gameSpeedDelay -= 5;
-	} else if (gameSpeedDelay > 100) {
-		gameSpeedDelay -= 3;
-	} else if (gameSpeedDelay > 50) {
-		gameSpeedDelay -= 2;
-	} else if (gameSpeedDelay > 25) {
-		gameSpeedDelay -= 1;
-	}
+	if (gameSpeedDelay > 150) gameSpeedDelay -= 5;
+	else if (gameSpeedDelay > 100) gameSpeedDelay -= 3;
+	else if (gameSpeedDelay > 50) gameSpeedDelay -= 2;
+	else if (gameSpeedDelay > 25) gameSpeedDelay -= 1;
 }
 
 function checkCollision() {
 	const head = snake[0];
-
-	// Wall collision
 	if (head.x < 1 || head.x > gridSize || head.y < 1 || head.y > gridSize) {
 		resetGame();
 	}
-
-	// Self collision
 	for (let i = 1; i < snake.length; i++) {
 		if (head.x === snake[i].x && head.y === snake[i].y) {
 			resetGame();
@@ -150,19 +138,14 @@ function resetGame() {
 	gameSpeedDelay = 200;
 	updateScore();
 
-	// On mobile, show the start button again
-	if (window.innerWidth <= 768) {
+	if (window.innerWidth <= 1024) {
 		startButton.style.display = 'block';
-		// Instruction text should stay hidden on mobile
 		instructionText.style.display = 'none';
 	} else {
-		// On desktop, keep start button hidden and show instruction text
 		startButton.style.display = 'none';
 		instructionText.style.display = 'block';
 	}
 }
-
-
 
 function updateScore() {
 	const currentScore = snake.length - 1;
@@ -197,7 +180,7 @@ function setDirection(newDirection) {
 	}
 }
 
-// Swipe controls for mobile
+// Touch swipe support
 let touchStartX = 0;
 let touchStartY = 0;
 
@@ -219,7 +202,7 @@ document.addEventListener('touchend', (e) => {
 	}
 });
 
-// Mobile button controls — both click and touchstart for instant response
+// Button controls for mobile & tablet
 function addMobileControls() {
 	const btnUp = document.getElementById('btn-up');
 	const btnDown = document.getElementById('btn-down');
