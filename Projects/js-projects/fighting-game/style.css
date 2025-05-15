@@ -237,6 +237,13 @@ canvas.canvas {
 	}
 }
 
+@media (max-width: 1024px) {
+	.touch-controls {
+		display: flex;
+		bottom: 150px;
+	}
+}
+
 #restartBtn {
 	padding: 10px 20px;
 	font-size: 1rem;
