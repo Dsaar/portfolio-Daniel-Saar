@@ -1,5 +1,6 @@
 'use strict';
 
+//form validation
 document.addEventListener('DOMContentLoaded', () => {
 	const form = document.getElementById('contactForm');
 
