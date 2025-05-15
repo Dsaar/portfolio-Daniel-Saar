@@ -12,17 +12,19 @@
 body {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	overflow: hidden;
 	height: 100vh;
-	background: linear-gradient(0deg, rgb(17, 51, 161) 0%, rgb(136, 34, 195)100%);
+	background: linear-gradient(0deg, rgb(17, 51, 161) 0%, rgb(136, 34, 195) 100%);
 	font-family: 'Press Start 2P', cursive;
+	padding: 20px;
 }
 
-div {
+.game-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
+	justify-content: center; }
 
 
 h1 {
