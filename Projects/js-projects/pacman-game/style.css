@@ -24,13 +24,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center; }
+	justify-content: center; 
+}
 
 
 h1 {
 	text-align: center;
 	color: lightgray;
-	padding-top: 80px;
+	padding-top: 20px;
 	padding-bottom: 50px;
 }
 
