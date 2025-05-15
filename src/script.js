@@ -45,4 +45,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 });
-  
+
+// back to top button
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Show or hide button based on scroll position
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset > 300) {
+		scrollToTopBtn.classList.add('show');
+	} else {
+		scrollToTopBtn.classList.remove('show');
+	}
+});
+
+// Scroll to top on click
+scrollToTopBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+});
