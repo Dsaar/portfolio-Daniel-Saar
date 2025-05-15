@@ -24,14 +24,15 @@ class Basket {
 }
 
 class Present {
-	constructor(gameArea, basket) {
+	constructor(gameArea, basket, type = 'gift') {
+		this.type = type;
 		this.x = Math.floor(Math.random() * 560);
 		this.y = 0;
 		this.gameArea = gameArea;
 		this.basket = basket;
 
 		this.element = document.createElement('div');
-		this.element.className = 'present';
+		this.element.className = type === 'gift' ? 'present' : 'coal';
 		this.element.style.left = this.x + 'px';
 		this.gameArea.appendChild(this.element);
 	}
@@ -46,18 +47,22 @@ class Present {
 		}
 
 		const basketRect = this.basket.element.getBoundingClientRect();
-		const presentRect = this.element.getBoundingClientRect();
+		const itemRect = this.element.getBoundingClientRect();
 
 		const isColliding = !(
-			basketRect.top > presentRect.bottom ||
-			basketRect.bottom < presentRect.top ||
-			basketRect.left > presentRect.right ||
-			basketRect.right < presentRect.left
+			basketRect.top > itemRect.bottom ||
+			basketRect.bottom < itemRect.top ||
+			basketRect.left > itemRect.right ||
+			basketRect.right < itemRect.left
 		);
 
 		if (isColliding) {
 			this.element.remove();
-			score++;
+			if (this.type === 'gift') {
+				score++;
+			} else if (this.type === 'coal') {
+				score = Math.max(0, score - 1); // Prevent negative score
+			}
 			scoreDisplay.textContent = "Score: " + score;
 			return false;
 		}
@@ -123,7 +128,8 @@ document.getElementById('startGameBtn').addEventListener('click', () => {
 
 function startGame() {
 	spawnInterval = setInterval(() => {
-		let p = new Present(gameArea, b);
+		const type = Math.random() < 0.8 ? 'gift' : 'coal'; // 80% gift, 20% coal
+		let p = new Present(gameArea, b, type);
 		presents.push(p);
 	}, 1500);
 
